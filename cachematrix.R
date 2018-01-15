@@ -25,12 +25,6 @@ list(set = set, get = get,setinverse = setinverse, getinverse = getinverse)
 # The cacheSolve function returns the inverse of the matrix (x). First call the function getinverse for the passed object (x)
 #then it checks if the inverse matrix has already been calculated in the cache. If not, it compute the inverse
 
-
-#It first checks if
-# the inverse has already been computed. If so, it gets the result and skips the
-# computation. If not, it computes the inverse, sets the value in the cache via
-# setinverse function.
-
 cacheSolve <- function(x, ...) {
   inver<- x$getinverse()
   if(!is.null(inver)) {
